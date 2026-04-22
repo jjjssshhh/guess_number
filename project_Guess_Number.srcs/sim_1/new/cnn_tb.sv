@@ -47,8 +47,8 @@ module cnn_tb();
         test_if.cnn_done = 0;
 
         #100 test_if.rstn = 1;
-        test_task();
-//        total_test();
+//        test_task();
+        total_test();
         //double_chk();
         //fake_num();
         #10000;
