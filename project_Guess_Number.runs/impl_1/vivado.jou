@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Apr 21 13:50:23 2026
+# Process ID         : 82149
+# Current directory  : /home/jsh-laptop/workspace_ondevice_2/fpga/self_study/project_Guess_Number/project_Guess_Number.runs/impl_1
+# Command line       : vivado -log OV_VGA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source OV_VGA.tcl -notrace
+# Log file           : /home/jsh-laptop/workspace_ondevice_2/fpga/self_study/project_Guess_Number/project_Guess_Number.runs/impl_1/OV_VGA.vdi
+# Journal file       : /home/jsh-laptop/workspace_ondevice_2/fpga/self_study/project_Guess_Number/project_Guess_Number.runs/impl_1/vivado.jou
+# Running On         : jsh-laptop-14TD90Q-GX5PK
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1240P
+# CPU Frequency      : 400.000 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16495 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 33675 MB
+# Available Virtual  : 30289 MB
+#-----------------------------------------------------------
+source OV_VGA.tcl -notrace

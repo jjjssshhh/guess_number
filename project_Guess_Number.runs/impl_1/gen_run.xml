@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1776746975">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="OV_VGA_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="OV_VGA_routed.rqs"/>
+  <File Type="RBD_FILE" Name="OV_VGA.rbd"/>
+  <File Type="NPI_FILE" Name="OV_VGA.npi"/>
+  <File Type="RNPI_FILE" Name="OV_VGA.rnpi"/>
+  <File Type="CFI_FILE" Name="OV_VGA.cfi"/>
+  <File Type="RCFI_FILE" Name="OV_VGA.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="OV_VGA_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="OV_VGA_boot.pdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="OV_VGA_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="OV_VGA_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="OV_VGA_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="OV_VGA_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="OV_VGA_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="OV_VGA_placed.dcp"/>
+  <File Type="OPT-DCP" Name="OV_VGA_opt.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="OV_VGA_timing_summary_routed.pb"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="OV_VGA_routed_bb.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="OV_VGA_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="OV_VGA_routed.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="OV_VGA_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="OV_VGA.hwdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="OV_VGA.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="OV_VGA.sysdef"/>
+  <File Type="BITSTR-MMI" Name="OV_VGA.mmi"/>
+  <File Type="BITSTR-BMM" Name="OV_VGA_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="OV_VGA.nky"/>
+  <File Type="BITSTR-RBT" Name="OV_VGA.rbt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="OV_VGA.bit"/>
+  <File Type="PDI-FILE" Name="OV_VGA.pdi"/>
+  <File Type="RDI-RDI" Name="OV_VGA.vdi"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="OV_VGA_timing_summary_routed.rpt"/>
+  <File Type="BG-BIN" Name="OV_VGA.bin"/>
+  <File Type="PLACE-IO" Name="OV_VGA_io_placed.rpt"/>
+  <File Type="OPT-DRC" Name="OV_VGA_drc_opted.rpt"/>
+  <File Type="PLACE-CTRL" Name="OV_VGA_control_sets_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="OV_VGA_methodology_drc_routed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="OV_VGA_utilization_placed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="OV_VGA_timing_summary_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="OV_VGA_reports.tcl"/>
+  <File Type="PA-TCL" Name="OV_VGA.tcl"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="OV_VGA_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="OV_VGA.bgn"/>
+  <File Type="PLACE-UTIL" Name="OV_VGA_utilization_placed.rpt"/>
+  <File Type="ROUTE-STATUS" Name="OV_VGA_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="OV_VGA_route_status.pb"/>
+  <File Type="BG-DRC" Name="OV_VGA.drc"/>
+  <File Type="ROUTE-PWR" Name="OV_VGA_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="OV_VGA_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="OV_VGA_power_summary_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="OV_VGA_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="OV_VGA_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="OV_VGA_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="OV_VGA_drc_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="OV_VGA_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="OV_VGA_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="OV_VGA_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="OV_VGA_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="OV_VGA_bus_skew_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="OV_VGA.msk"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="OV_VGA_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="OV_VGA_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="OV_VGA_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="OV_VGA_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="OV_VGA_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="OV_VGA_bus_skew_postroute_physopted.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OV7670_4/OV7670_4.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci"/>
+        <Attr Name="ImportTime" Val="1775002928"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/Image_conv.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OV7670_4/OV7670_4.srcs/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/Image_conv.sv"/>
+        <Attr Name="ImportTime" Val="1775118236"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/OV_MASTER.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OV7670_4/OV7670_4.srcs/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/OV_MASTER.sv"/>
+        <Attr Name="ImportTime" Val="1775038675"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/OV_read.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OV7670_4/OV7670_4.srcs/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/OV_read.sv"/>
+        <Attr Name="ImportTime" Val="1774750796"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/VGA_controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OV7670_4/OV7670_4.srcs/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/VGA_controller.sv"/>
+        <Attr Name="ImportTime" Val="1775118773"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cnn_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/make_sio_c.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OV7670_4/OV7670_4.srcs/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/make_sio_c.sv"/>
+        <Attr Name="ImportTime" Val="1774769120"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/ov7670_.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OV7670_4/OV7670_4.srcs/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/ov7670_.sv"/>
+        <Attr Name="ImportTime" Val="1774749572"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/VGA.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OV7670_4/OV7670_4.srcs/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/VGA.sv"/>
+        <Attr Name="ImportTime" Val="1775118748"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OV7670_2.srcs/sim_1/imports/new/tb_OV.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OV7670_4/OV7670_4.srcs/sources_1/imports/OV7670_2.srcs/sim_1/imports/new/tb_OV.sv"/>
+        <Attr Name="ImportTime" Val="1774880014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_w4.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_w4.mem"/>
+        <Attr Name="ImportTime" Val="1776670351"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_conv1_b.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_conv1_b.mem"/>
+        <Attr Name="ImportTime" Val="1776670345"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_w2.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_w2.mem"/>
+        <Attr Name="ImportTime" Val="1776670350"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_w5.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_w5.mem"/>
+        <Attr Name="ImportTime" Val="1776670352"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_w9.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_w9.mem"/>
+        <Attr Name="ImportTime" Val="1776670356"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_w7.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_w7.mem"/>
+        <Attr Name="ImportTime" Val="1776670354"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_w3.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_w3.mem"/>
+        <Attr Name="ImportTime" Val="1776670351"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_b.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_b.mem"/>
+        <Attr Name="ImportTime" Val="1776670347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_w0.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_w0.mem"/>
+        <Attr Name="ImportTime" Val="1776670348"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_w1.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_w1.mem"/>
+        <Attr Name="ImportTime" Val="1776670349"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_conv1_w.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_conv1_w.mem"/>
+        <Attr Name="ImportTime" Val="1776670346"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_w6.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_w6.mem"/>
+        <Attr Name="ImportTime" Val="1776670353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FINAL_fc_w8.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/FINAL_fc_w8.mem"/>
+        <Attr Name="ImportTime" Val="1776670355"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="OV_VGA"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga/Basys-3-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OV7670_4/OV7670_4.srcs/constrs_1/imports/fpga/Basys-3-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1775040155"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/OV_VGA.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>

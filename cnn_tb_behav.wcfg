@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cnn_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cnn_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,332.890001 us"></ZoomEndTime>
+      <Cursor1Time time="1,332.890000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="224"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="46" />
+   <wvobject type="array" fp_name="/cnn_tb/ctop/in_buffer">
+      <obj_property name="ElementShortName">in_buffer[0:1][7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_buffer[0:1][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/scnn_valid">
+      <obj_property name="ElementShortName">scnn_valid[0:1]</obj_property>
+      <obj_property name="ObjectShortName">scnn_valid[0:1]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/scnn_done">
+      <obj_property name="ElementShortName">scnn_done[0:1]</obj_property>
+      <obj_property name="ObjectShortName">scnn_done[0:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider248" type="divider">
+      <obj_property name="label">CDC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/test_if/cnn_dt">
+      <obj_property name="ElementShortName">cnn_dt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnn_dt[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/cnt">
+      <obj_property name="ElementShortName">cnt[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/ccnt">
+      <obj_property name="ElementShortName">ccnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ccnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider247" type="divider">
+      <obj_property name="label">Line buffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/select">
+      <obj_property name="ElementShortName">select[1:0]</obj_property>
+      <obj_property name="ObjectShortName">select[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/ctop/line_valid">
+      <obj_property name="ElementShortName">line_valid</obj_property>
+      <obj_property name="ObjectShortName">line_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/line_buffer0">
+      <obj_property name="ElementShortName">line_buffer0[0:27][7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer0[0:27][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/line_buffer1">
+      <obj_property name="ElementShortName">line_buffer1[0:27][7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer1[0:27][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/line_buffer2">
+      <obj_property name="ElementShortName">line_buffer2[0:27][7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer2[0:27][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider246" type="divider">
+      <obj_property name="label">Convolution</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/idx">
+      <obj_property name="ElementShortName">idx[5:0]</obj_property>
+      <obj_property name="ObjectShortName">idx[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/ctop/start_conv">
+      <obj_property name="ElementShortName">start_conv</obj_property>
+      <obj_property name="ObjectShortName">start_conv</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/sys">
+      <obj_property name="ElementShortName">sys[0:2][0:2][7:0]</obj_property>
+      <obj_property name="ObjectShortName">sys[0:2][0:2][7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/sys[0]">
+         <obj_property name="ElementShortName">[0][0:2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:2][7:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/sys[1]">
+         <obj_property name="ElementShortName">[1][0:2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:2][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/sys[2]">
+         <obj_property name="ElementShortName">[2][0:2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:2][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/sys[0]">
+         <obj_property name="ElementShortName">[0][0:2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:2][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/sys[1]">
+         <obj_property name="ElementShortName">[1][0:2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:2][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/sys[2]">
+         <obj_property name="ElementShortName">[2][0:2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:2][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/ctop/conv_d2">
+      <obj_property name="ElementShortName">conv_d2</obj_property>
+      <obj_property name="ObjectShortName">conv_d2</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/ctop/conv_d3">
+      <obj_property name="ElementShortName">conv_d3</obj_property>
+      <obj_property name="ObjectShortName">conv_d3</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/process">
+      <obj_property name="ElementShortName">process[0:11][15:0]</obj_property>
+      <obj_property name="ObjectShortName">process[0:11][15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="divider245" type="divider">
+      <obj_property name="label">ReLU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/raw_result">
+      <obj_property name="ElementShortName">raw_result[0:3][23:0]</obj_property>
+      <obj_property name="ObjectShortName">raw_result[0:3][23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/relu_result">
+      <obj_property name="ElementShortName">relu_result[0:3][6:0]</obj_property>
+      <obj_property name="ObjectShortName">relu_result[0:3][6:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider244" type="divider">
+      <obj_property name="label">Polling</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/ctop/fc_valid">
+      <obj_property name="ElementShortName">fc_valid</obj_property>
+      <obj_property name="ObjectShortName">fc_valid</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/ctop/mm_chk">
+      <obj_property name="ElementShortName">mm_chk</obj_property>
+      <obj_property name="ObjectShortName">mm_chk</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/fc_idx">
+      <obj_property name="ElementShortName">fc_idx[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fc_idx[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/polling_output">
+      <obj_property name="ElementShortName">polling_output[0:3][6:0]</obj_property>
+      <obj_property name="ObjectShortName">polling_output[0:3][6:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider2307" type="divider">
+      <obj_property name="label">FC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/fc_idx">
+      <obj_property name="ElementShortName">fc_idx[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fc_idx[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/temp_result">
+      <obj_property name="ElementShortName">temp_result[0:9][39:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_result[0:9][39:0]</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/fc_result">
+      <obj_property name="ElementShortName">fc_result[0:9][39:0]</obj_property>
+      <obj_property name="ObjectShortName">fc_result[0:9][39:0]</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider351" type="divider">
+      <obj_property name="label">ArguMax</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/ctop/final_chk">
+      <obj_property name="ElementShortName">final_chk</obj_property>
+      <obj_property name="ObjectShortName">final_chk</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg">
+      <obj_property name="ElementShortName">final_reg[0:9][39:0]</obj_property>
+      <obj_property name="ObjectShortName">final_reg[0:9][39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[0]">
+         <obj_property name="ElementShortName">[0][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][39:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[1]">
+         <obj_property name="ElementShortName">[1][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[2]">
+         <obj_property name="ElementShortName">[2][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[3]">
+         <obj_property name="ElementShortName">[3][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[4]">
+         <obj_property name="ElementShortName">[4][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[5]">
+         <obj_property name="ElementShortName">[5][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[6]">
+         <obj_property name="ElementShortName">[6][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[7]">
+         <obj_property name="ElementShortName">[7][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[8]">
+         <obj_property name="ElementShortName">[8][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[9]">
+         <obj_property name="ElementShortName">[9][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[0]">
+         <obj_property name="ElementShortName">[0][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[1]">
+         <obj_property name="ElementShortName">[1][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[2]">
+         <obj_property name="ElementShortName">[2][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[3]">
+         <obj_property name="ElementShortName">[3][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[4]">
+         <obj_property name="ElementShortName">[4][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[5]">
+         <obj_property name="ElementShortName">[5][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[6]">
+         <obj_property name="ElementShortName">[6][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[7]">
+         <obj_property name="ElementShortName">[7][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[8]">
+         <obj_property name="ElementShortName">[8][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][39:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cnn_tb/ctop/final_reg[9]">
+         <obj_property name="ElementShortName">[9][39:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][39:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/final_seg">
+      <obj_property name="ElementShortName">final_seg[39:0]</obj_property>
+      <obj_property name="ObjectShortName">final_seg[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/ctop/com_chk">
+      <obj_property name="ElementShortName">com_chk</obj_property>
+      <obj_property name="ObjectShortName">com_chk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/ctop/seg_chk">
+      <obj_property name="ElementShortName">seg_chk</obj_property>
+      <obj_property name="ObjectShortName">seg_chk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/temp_num">
+      <obj_property name="ElementShortName">temp_num[3:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_num[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/ctop/final_num">
+      <obj_property name="ElementShortName">final_num[3:0]</obj_property>
+      <obj_property name="ObjectShortName">final_num[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider121" type="divider">
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/test_if/rstn">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/test_if/cnn_valid">
+      <obj_property name="ElementShortName">cnn_valid</obj_property>
+      <obj_property name="ObjectShortName">cnn_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cnn_tb/test_if/cnn_done">
+      <obj_property name="ElementShortName">cnn_done</obj_property>
+      <obj_property name="ObjectShortName">cnn_done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/test_if/seg">
+      <obj_property name="ElementShortName">seg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg[6:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cnn_tb/test_if/an">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

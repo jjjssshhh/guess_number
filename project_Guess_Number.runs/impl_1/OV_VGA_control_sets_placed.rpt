@@ -1,0 +1,170 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Tue Apr 21 13:51:19 2026
+| Host         : jsh-laptop-14TD90Q-GX5PK running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_control_sets -verbose -file OV_VGA_control_sets_placed.rpt
+| Design       : OV_VGA
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    92 |
+|    Minimum number of control sets                        |    92 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   396 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    92 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     9 |
+| >= 6 to < 8        |     5 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |    55 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    14 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |            8 |
+| No           | No                    | Yes                    |             171 |           86 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             611 |          206 |
+| Yes          | No                    | Yes                    |            1755 |          733 |
+| Yes          | Yes                   | No                     |             100 |           36 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+----------------------------------------+--------------------------------+------------------+----------------+--------------+
+|    Clock Signal    |              Enable Signal             |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------+----------------------------------------+--------------------------------+------------------+----------------+--------------+
+|  PCLK_IBUF_BUFG    | Icv0/m\\.led_clk2_i_1_n_0              | cnn0/rstn                      |                1 |              1 |         1.00 |
+|  wclk_IBUF_BUFG    | cnn0/select                            | cnn0/rstn                      |                3 |              4 |         1.33 |
+|  cw0/inst/clk_out1 | rd/phase1_cnt[3]_i_1_n_0               | cnn0/rstn                      |                2 |              4 |         2.00 |
+|  cnn0/final_chk    |                                        |                                |                1 |              4 |         4.00 |
+|  cw0/inst/clk_out1 | wt/phase1_cnt[3]_i_1__0_n_0            | cnn0/rstn                      |                3 |              4 |         1.33 |
+|  wclk_IBUF_BUFG    | cnn0/final_chk                         | cnn0/rstn                      |                2 |              5 |         2.50 |
+|  cw0/inst/clk_out1 | rd/timing_cnt[4]_i_1__0_n_0            | cnn0/rstn                      |                2 |              5 |         2.50 |
+|  cw0/inst/clk_out1 | wt/timing_cnt[4]_i_1_n_0               | cnn0/rstn                      |                2 |              5 |         2.50 |
+|  cw0/inst/clk_out1 | ov_m/FSM_onehot_st_master[4]_i_1_n_0   | cnn0/rstn                      |                2 |              5 |         2.50 |
+|  wclk_IBUF_BUFG    | cnn0/poll_cnt                          | cnn0/rstn                      |                2 |              5 |         2.50 |
+|  cw0/inst/clk_out1 | ov_m/COMMAND                           | cnn0/rstn                      |                2 |              6 |         3.00 |
+|  wclk_IBUF_BUFG    | cnn0/line_valid                        | cnn0/rstn                      |                2 |              6 |         3.00 |
+|  wclk_IBUF_BUFG    | cnn0/cnt[5]_i_1_n_0                    | cnn0/rstn                      |                3 |              6 |         2.00 |
+|  cw0/inst/clk_out2 |                                        |                                |                2 |              7 |         3.50 |
+|  cw0/inst/clk_out1 | wt/E[0]                                | cnn0/rstn                      |                2 |              7 |         3.50 |
+|  PCLK_IBUF_BUFG    | Icv0/green                             | cnn0/rstn                      |                2 |              8 |         4.00 |
+|  wclk_IBUF_BUFG    | cnn0/seg_chk                           | cnn0/rstn                      |                2 |              8 |         4.00 |
+|  PCLK_IBUF_BUFG    |                                        | cnn0/rstn                      |                8 |              9 |         1.12 |
+|  PCLK_IBUF_BUFG    | Icv0/y0                                | cnn0/rstn                      |                3 |              9 |         3.00 |
+|  PCLK_IBUF_BUFG    | Icv0/x[8]_i_1_n_0                      | cnn0/rstn                      |                2 |              9 |         4.50 |
+|  wclk_IBUF_BUFG    | rstn_IBUF                              |                                |                8 |             10 |         1.25 |
+|  cw0/inst/clk_out2 | b0/Vsync_cnt                           | cnn0/rstn                      |                3 |             10 |         3.33 |
+|  PCLK_IBUF_BUFG    | Icv0/m\\.in_dt[7]_i_1_n_0              | cnn0/rstn                      |                6 |             10 |         1.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][12][10]_i_1_n_0 | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][4][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][1][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][2][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][3][10]_i_1_n_0  | cnn0/rstn                      |                7 |             11 |         1.57 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][4][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][11][10]_i_1_n_0 | cnn0/rstn                      |                5 |             11 |         2.20 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][10][10]_i_1_n_0 | cnn0/rstn                      |                4 |             11 |         2.75 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][0][10]_i_1_n_0  | cnn0/rstn                      |                2 |             11 |         5.50 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][9][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][8][10]_i_1_n_0  | cnn0/rstn                      |                4 |             11 |         2.75 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][7][10]_i_1_n_0  | cnn0/rstn                      |                7 |             11 |         1.57 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][6][10]_i_1_n_0  | cnn0/rstn                      |                4 |             11 |         2.75 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][5][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][4][10]_i_1_n_0  | cnn0/rstn                      |                6 |             11 |         1.83 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][5][10]_i_1_n_0  | cnn0/rstn                      |                2 |             11 |         5.50 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][6][10]_i_1_n_0  | cnn0/rstn                      |                4 |             11 |         2.75 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][7][10]_i_1_n_0  | cnn0/rstn                      |                8 |             11 |         1.38 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][8][10]_i_1_n_0  | cnn0/rstn                      |                6 |             11 |         1.83 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[2][9][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][0][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][10][10]_i_1_n_0 | cnn0/rstn                      |                5 |             11 |         2.20 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][11][10]_i_1_n_0 | cnn0/rstn                      |                7 |             11 |         1.57 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][12][10]_i_1_n_0 | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][1][10]_i_1_n_0  | cnn0/rstn                      |                4 |             11 |         2.75 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][2][10]_i_1_n_0  | cnn0/rstn                      |                5 |             11 |         2.20 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][3][10]_i_1_n_0  | cnn0/rstn                      |                7 |             11 |         1.57 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][4][10]_i_1_n_0  | cnn0/rstn                      |                4 |             11 |         2.75 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][5][10]_i_1_n_0  | cnn0/rstn                      |                2 |             11 |         5.50 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][6][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][2][10]_i_1_n_0  | cnn0/rstn                      |                5 |             11 |         2.20 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][9][10]_i_1_n_0  | cnn0/rstn                      |                2 |             11 |         5.50 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][8][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[3][7][10]_i_1_n_0  | cnn0/rstn                      |                6 |             11 |         1.83 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][0][10]_i_1_n_0  | cnn0/rstn                      |                6 |             11 |         1.83 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][10][10]_i_1_n_0 | cnn0/rstn                      |                6 |             11 |         1.83 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][11][10]_i_1_n_0 | cnn0/rstn                      |               10 |             11 |         1.10 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][12][10]_i_1_n_0 | cnn0/rstn                      |                4 |             11 |         2.75 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][1][10]_i_1_n_0  | cnn0/rstn                      |                3 |             11 |         3.67 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][2][10]_i_1_n_0  | cnn0/rstn                      |                5 |             11 |         2.20 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][3][10]_i_1_n_0  | cnn0/rstn                      |                7 |             11 |         1.57 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][5][10]_i_1_n_0  | cnn0/rstn                      |                7 |             11 |         1.57 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][6][10]_i_1_n_0  | cnn0/rstn                      |                5 |             11 |         2.20 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][7][10]_i_1_n_0  | cnn0/rstn                      |                9 |             11 |         1.22 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][8][10]_i_1_n_0  | cnn0/rstn                      |                8 |             11 |         1.38 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[0][9][10]_i_1_n_0  | cnn0/rstn                      |                8 |             11 |         1.38 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][0][10]_i_1_n_0  | cnn0/rstn                      |                4 |             11 |         2.75 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][10][10]_i_1_n_0 | cnn0/rstn                      |                5 |             11 |         2.20 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][11][10]_i_1_n_0 | cnn0/rstn                      |                6 |             11 |         1.83 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][12][10]_i_1_n_0 | cnn0/rstn                      |                4 |             11 |         2.75 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][1][10]_i_1_n_0  | cnn0/rstn                      |                4 |             11 |         2.75 |
+|  wclk_IBUF_BUFG    | cnn0/polling_buffer[1][3][10]_i_1_n_0  | cnn0/rstn                      |                7 |             11 |         1.57 |
+|  cw0/inst/clk_out1 |                                        |                                |                5 |             12 |         2.40 |
+|  cw0/inst/clk_out2 | rstn_IBUF                              | b0/mi0\\.vgaRed[3]_i_1_n_0     |                4 |             12 |         3.00 |
+|  cw0/inst/clk_out2 |                                        | cnn0/rstn                      |                7 |             14 |         2.00 |
+|  cw0/inst/clk_out1 | ov_m/mi0\\.Sub_address[7]_i_1_n_0      |                                |                7 |             16 |         2.29 |
+|  PCLK_IBUF_BUFG    | Icv0/m\\.addra[17]_i_1_n_0             | cnn0/rstn                      |                6 |             18 |         3.00 |
+|  cw0/inst/clk_out2 | b0/mi0\\.addrb                         | cnn0/rstn                      |                3 |             18 |         6.00 |
+|  cw0/inst/clk_out1 | ov_m/timer_0                           | cnn0/rstn                      |                5 |             22 |         4.40 |
+|  cw0/inst/clk_out1 |                                        | cnn0/rstn                      |               13 |             24 |         1.85 |
+|  wclk_IBUF_BUFG    | cnn0/conv_d3                           | cnn0/rstn                      |               15 |             44 |         2.93 |
+|  wclk_IBUF_BUFG    | rstn_IBUF                              | cnn0/raw_result[1][10]_i_1_n_0 |               16 |             44 |         2.75 |
+|  wclk_IBUF_BUFG    | rstn_IBUF                              | cnn0/result[1][17]_i_1_n_0     |               16 |             44 |         2.75 |
+|  wclk_IBUF_BUFG    |                                        | cnn0/rstn                      |               58 |            124 |         2.14 |
+|  wclk_IBUF_BUFG    | cnn0/process                           |                                |               53 |            185 |         3.49 |
+|  wclk_IBUF_BUFG    | cnn0/fc_valid2_out                     | cnn0/rstn                      |               96 |            189 |         1.97 |
+|  wclk_IBUF_BUFG    | cnn0/fc_idx[7]_i_1_n_0                 | cnn0/rstn                      |              212 |            375 |         1.77 |
+|  wclk_IBUF_BUFG    | cnn0/final_reg                         |                                |              138 |            400 |         2.90 |
+|  wclk_IBUF_BUFG    | cnn0/fc_result                         | cnn0/rstn                      |              100 |            400 |         4.00 |
++--------------------+----------------------------------------+--------------------------------+------------------+----------------+--------------+
+
+

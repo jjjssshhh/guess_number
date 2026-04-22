@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../project_Guess_Number.ip_user_files/ipstatic" \
+"../../../../project_Guess_Number.srcs/sources_1/imports/OV7670_2.srcs/sources_1/imports/new/VGA.sv" \
+"../../../../project_Guess_Number.srcs/sources_1/new/cnn_top.sv" \
+"../../../../project_Guess_Number.srcs/sim_1/new/cnn_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

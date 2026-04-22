@@ -1,0 +1,8 @@
++====================+====================+============================+
+| Launch Setup Clock | Launch Hold Clock  | Pin                        |
++====================+====================+============================+
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | Icv0/sync_pclk_reg[0]/D    |
+| pclk_pin           | pclk_pin           | cnn0/scnn_valid_reg[0]/D   |
+| pclk_pin           | pclk_pin           | cnn0/scnn_done_reg[0]/D    |
+| pclk_pin           | pclk_pin           | cnn0/in_buffer_reg[0][7]/D |
++--------------------+--------------------+----------------------------+
