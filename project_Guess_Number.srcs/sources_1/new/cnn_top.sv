@@ -61,27 +61,20 @@ module cnn_top(my_vga_if.cnn_top m);
    (* ram_style = "block" *) logic signed [7:0] fc_w3[0:ROOM]; (* ram_style = "block" *) logic signed [7:0] fc_w8[0:ROOM];
    (* ram_style = "block" *) logic signed [7:0] fc_w4[0:ROOM]; (* ram_style = "block" *) logic signed [7:0] fc_w9[0:ROOM];
    
-    /* 메모리에 직접 때려넣기 */
+    string path = "/home/jsh-laptop/workspace_ondevice_2/fpga/self_study/project_Guess_Number";
+
     initial begin
-//        $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_conv1_b.mem",conv1_b);
-//        $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_conv1_w.mem",conv1_w);
-//        $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_b.mem",fc_b);
-//        //$readmemh("fc_w.mem",fc_w);
-//        $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_w0.mem",fc_w0); $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_w5.mem",fc_w5);
-//        $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_w1.mem",fc_w1); $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_w6.mem",fc_w6);
-//        $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_w2.mem",fc_w2); $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_w7.mem",fc_w7);
-//        $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_w3.mem",fc_w3); $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_w8.mem",fc_w8);
-//        $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_w4.mem",fc_w4); $readmemh("/home/jsh-laptop/Downloads/weights_final/FINAL_fc_w9.mem",fc_w9);
-        $readmemh("/home/jsh-laptop/Downloads/FINAL_conv1_b.mem",conv1_b);
-        $readmemh("/home/jsh-laptop/Downloads/FINAL_conv1_w.mem",conv1_w);
-        $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_b.mem",fc_b);
-        //$readmemh("fc_w.mem",fc_w);
-        $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_w0.mem",fc_w0); $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_w5.mem",fc_w5);
-        $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_w1.mem",fc_w1); $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_w6.mem",fc_w6);
-        $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_w2.mem",fc_w2); $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_w7.mem",fc_w7);
-        $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_w3.mem",fc_w3); $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_w8.mem",fc_w8);
-        $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_w4.mem",fc_w4); $readmemh("/home/jsh-laptop/Downloads/FINAL_fc_w9.mem",fc_w9);
-        
+        // 기본 레이어 가중치
+        $readmemh($sformatf("%s/FINAL_conv1_b.mem", path), conv1_b);
+        $readmemh($sformatf("%s/FINAL_conv1_w.mem", path), conv1_w);
+        $readmemh($sformatf("%s/FINAL_fc_b.mem",    path), fc_b);
+    
+        // FC 레이어 가중치 (한 줄에 가독성 있게 배치)
+        $readmemh($sformatf("%s/FINAL_fc_w0.mem", path), fc_w0); $readmemh($sformatf("%s/FINAL_fc_w5.mem", path), fc_w5);
+        $readmemh($sformatf("%s/FINAL_fc_w1.mem", path), fc_w1); $readmemh($sformatf("%s/FINAL_fc_w6.mem", path), fc_w6);
+        $readmemh($sformatf("%s/FINAL_fc_w2.mem", path), fc_w2); $readmemh($sformatf("%s/FINAL_fc_w7.mem", path), fc_w7);
+        $readmemh($sformatf("%s/FINAL_fc_w3.mem", path), fc_w3); $readmemh($sformatf("%s/FINAL_fc_w8.mem", path), fc_w8);
+        $readmemh($sformatf("%s/FINAL_fc_w4.mem", path), fc_w4); $readmemh($sformatf("%s/FINAL_fc_w9.mem", path), fc_w9);
     end
     
     // CDC

@@ -54,11 +54,11 @@ module cnn_tb();
         #10000;
         $finish;
     end
-    
+    string path_tb = "/home/jsh-laptop/workspace_ondevice_2/fpga/self_study/project_Guess_Number";
     task double_chk();
         integer i;
         repeat(2)begin
-            $sformat(file_name, "/home/jsh-laptop/Downloads/N/mnist_%0d.mem", 1);
+            file_name = $sformatf("%s/mnist_%0d.mem",path_tb,0);
             $readmemh(file_name, test_digit_mem);
             for(i=0; i<TROOM; i=i+1) begin    
                     @(posedge test_if.wclk); // 매 데이터마다 클럭 동기화
@@ -77,7 +77,7 @@ module cnn_tb();
     task fake_num();
         integer i,k;
         for(k=0;k<10;k=k+1)begin
-            $sformat(file_name, "/home/jsh-laptop/Downloads/N/mnist_%0d.mem", k);
+            file_name = $sformatf("%s/mnist_%0d.mem",path_tb,i);
             $readmemh(file_name, test_digit_mem);
             for(i=0; i<TROOM; i=i+1) begin    
                     @(posedge test_if.wclk); // 매 데이터마다 클럭 동기화
@@ -96,7 +96,7 @@ module cnn_tb();
     task test_task();
     
         integer idx; 
-        $sformat(file_name,"/home/jsh-laptop/Downloads/N/mnist_%0d.mem", 4);
+        file_name = $sformatf("%s/mnist_%0d.mem",path_tb,4);
         $readmemh(file_name,test_digit_mem);
 
         idx = 0;
@@ -119,7 +119,7 @@ module cnn_tb();
         integer i;  
         logic [11:0] idx;
         for(i=0;i<10;i=i+1)begin
-            $sformat(file_name,"/home/jsh-laptop/Downloads/N/mnist_%0d.mem", i);
+            file_name = $sformatf("%s/mnist_%0d.mem",path_tb,i);
             $readmemh(file_name,test_digit_mem);
             idx = 0;
             repeat(28)begin
